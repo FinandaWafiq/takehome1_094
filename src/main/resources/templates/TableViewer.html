@@ -5,11 +5,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Hasil Data Pembelian</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>Data Transaksi</div>
+        <hr>
+    <table border="1"> 
+    
+        <th>Nama Buah</th>
+            <th>Jumlah Pembelian (Kg)</th>
+            <th>Harga Per Kg (Rp)</th>
+            <th>Diskon (%)</th>
+            <th>Total (Rp)</th>
+        <tr>
+        <td th:text="${namabuah}"></td>
+        <td th:text="${jumlahbeli}"></td>
+        <td th:text="${harga}"></td>
+        <td th:text="${diskon}"></td>
+        <td th:text="${total}"></td>
+    </tr>
+    </table>
+    <br>
     </body>
 </html>
